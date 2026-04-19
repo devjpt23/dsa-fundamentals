@@ -73,8 +73,8 @@ int main() {
     AnimalNoVirtual* cat1 = new CatNoVirtual();
 
     // We WANT "Woof!" and "Meow!", but we get "..." for both!
-    cout << "  dog1->speak() = " << dog1->speak() << endl;   // prints "..."  ❌
-    cout << "  cat1->speak() = " << cat1->speak() << endl;   // prints "..."  ❌
+    cout << "  dog1->speak() = " << dog1->speak() << endl;   // prints "..."  
+    cout << "  cat1->speak() = " << cat1->speak() << endl;   // prints "..."  
     cout << endl;
     cout << "  Both say \"...\" because C++ only looks at the\n";
     cout << "  POINTER TYPE (AnimalNoVirtual*), not the actual object.\n";
@@ -90,8 +90,8 @@ int main() {
     AnimalVirtual* cat2 = new CatVirtual();
 
     // NOW we get the correct behavior!
-    cout << "  dog2->speak() = " << dog2->speak() << endl;   // prints "Woof!"  ✅
-    cout << "  cat2->speak() = " << cat2->speak() << endl;   // prints "Meow!"  ✅
+    cout << "  dog2->speak() = " << dog2->speak() << endl;   // prints "Woof!"  
+    cout << "  cat2->speak() = " << cat2->speak() << endl;   // prints "Meow!"  
     cout << endl;
     cout << "  Now C++ looks at the ACTUAL OBJECT and calls\n";
     cout << "  the correct derived version.\n";
